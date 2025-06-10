@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+.cat {
+  background-color: grey;
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cat > button {
+  margin-bottom: 10px;
+}
