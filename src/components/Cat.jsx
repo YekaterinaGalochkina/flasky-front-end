@@ -1,13 +1,25 @@
-const Cat = () => {
+import PropTypes from 'prop-types';
+
+const Cat = ( { name, color, personality, caretaker } ) => {
+
     return (
-        <>
+
         <li className='cat'>
-          <h2>Name of Cat</h2>
-          <p>Meow!</p>
+          <h2>Name: {name} </h2>
+          <h2>Color: {color} </h2>
+          <h2>Personality: {personality} </h2>
+          <h2>Caretaker: {caretaker} </h2>
           <button>Pet</button>
         </li>
-        </>
+      
     );
+};
+
+Cat.propTypes = {
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  personality: PropTypes.string.isRequired,
+  caretaker: PropTypes.string.isRequired,
 };
 
 export default Cat;
